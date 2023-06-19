@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <title>CookieClicker</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js"></script>
+  </head>
+  	<body>
+		<div class="header">
+			<div class="point_wrapper">
+				<input type="text" class="current_points" id="currentPoints" value="1"/>
+				<label>pkt.</label>
+			</div>
+			<div class="point_wrapper">
+				<input type="text" class="current_pps" id="currentPps" value="0"/>
+				<label>pps.</label>
+			</div>
+			<div class="point_wrapper">
+				<input type="text" class="current_ppc" id="currentPpc" value="1"/>
+				<label>ppc.</label>
+			</div>
+		</div>
+		<input type="button" class="btn_click" onclick="addPoints()" value="Click" />
+		<div class="shop_menue_worker">
+			<div class="shop_item" value="Farmer">
+				<div class="item_info">
+					<img src="icons/farmer.svg"></a>
+				</div>
+				<div class="item_info">
+					<label>Name</label>
+					<input type="text" class="item_name" id="itemName" value="Farmer">
+				</div>
+				<div class="item_info">
+					<label>Anz.</label>
+					<input type="text" class="item_count" id="itemCount" value="0">
+				</div>
+				<div class="item_info">
+					<label>ppc.</label>
+					<input type="text" class="item_ppc" id="itemPpc" value="1">
+				</div>
+				<div class="item_info">
+					<label>Price</label>
+					<input type="text" class="item_price" id="itemPrice" value="10">
+				</div>
+				<div class="item_info">
+					<input type="button" class="btn_buy" onclick="buyItem()" value="Click"/>
+				</div>
+			</div>
+		</div>
+		<div class ="shop_menue_upgrades">
+		</div>
+		<input type="button" class="menue_switch" id="menueSwitch" onclick="switchMenue()" value="switch">
+	</body>
+</html>
